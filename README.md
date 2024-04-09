@@ -78,4 +78,4 @@ prueba-tecnica-tg/
 
 ---
 
-Hecho con ❤️ por [Tu Nombre](https://github.com/tuusuario)
+Hecho con ❤️ por [Valentino Villar](https://github.com/vlevillar)

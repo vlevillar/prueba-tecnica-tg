@@ -32,18 +32,6 @@ Para ejecutar la aplicación en modo de desarrollo:
 npm run dev
 ```
 
-Para construir la aplicación para producción:
-
-```bash
-npm run build
-```
-
-Para iniciar el servidor de producción:
-
-```bash
-npm start
-```
-
 ### Tecnologías Utilizadas
 
 - [Next.js](https://nextjs.org/) - Marco de trabajo de React para construir aplicaciones renderizadas en el servidor y generadas estáticamente.

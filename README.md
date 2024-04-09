@@ -9,13 +9,13 @@ Antes de comenzar, asegúrate de tener Node.js y npm instalados en tu máquina.
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/tuusuario/mi-app.git
+   git clone https://github.com/vlevillar/prueba-tecnica-tg.git
    ```
 
 2. Navega hasta el directorio del proyecto:
 
    ```bash
-   cd mi-app
+   cd prueba-tecnica-tg
    ```
 
 3. Instala las dependencias:
@@ -61,7 +61,7 @@ npm start
 ### Estructura de Carpetas
 
 ```
-mi-app/
+prueba-tecnica-tg/
 │
 ├── components/      # Componentes de React
 │

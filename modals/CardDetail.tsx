@@ -30,12 +30,12 @@ const CardDetail: React.FC<CardDetailProps> = ({ onClose, brewery }) => {
   };
 
   return (
-    <div className="fixed inset-0 flex justify-center items-center bg-bgPrimary z-30 h-full">
+    <div className="w-full h-full">
       <div className="absolute top-0 left-0 w-full">
         <AppBar onClose={handleClose} isDetailOpen />
       </div>
       <motion.div
-        style={{ width: "100vh", height: "85vh", overflowY: "auto" }}
+      style={{ width: "100%", height: "90%", maxHeight: "90vh", overflowY: "auto", paddingTop:"4rem" }}
         initial={{ x: "100%", opacity: 0 }}
         animate={isClosed ? { x: "100%", opacity: 0 } : { x: 0, opacity: 1 }}
         transition={{ duration: 0.3 }}
@@ -93,8 +93,9 @@ const CardDetail: React.FC<CardDetailProps> = ({ onClose, brewery }) => {
           <button
             className="w-full h-full rounded-xl text-white font-semibold leading-6 text-xl items-center flex justify-center"
             style={{
-              border: "1px solid",
-            borderColor: "linear-gradient(90deg, #3540E8 0%, #E41AD6 100%)",
+              border: "2px solid",
+              backgroundClip: "padding-box",
+              borderColor: "linear-gradient(90deg, #3540E8 0%, #E41AD6 100%)",
             }}
           >
             Opciones de transporte

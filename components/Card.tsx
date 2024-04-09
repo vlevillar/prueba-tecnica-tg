@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Text } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
-import CardDetail from "@/modals/CardDetail";
+import CardDetail from "../modals/CardDetail";
 
 interface Brewery {
   id: string;
@@ -62,7 +62,13 @@ const Card: React.FC<CardProps> = ({ brewery }) => {
           </div>
         </div>
       </div>
-      {isExpanded && <CardDetail onClose={handleClose} brewery={brewery}/>}
+      {isExpanded && (
+        <div className="fixed inset-0 flex justify-center items-center bg-bgPrimary z-30">
+          <div className="absolute inset-0 overflow-auto">
+            <CardDetail onClose={handleClose} brewery={brewery} />
+          </div>
+        </div>
+      )}
       <div className="flex items-center justify-center mt-4">
         <button
           className="w-64 h-10 rounded-xl text-white font-semibold leading-6 text-xl items-center flex justify-center"
